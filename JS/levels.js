@@ -1,0 +1,20 @@
+levels=[
+	{
+		edge:{x:750,y:600},
+		player:[480,480],
+		walls:[
+			{position:{x:0,y:510},type:1,color:0,level:0,width:150,height:90},
+			{position:{x:150,y:480},type:1,color:0,level:0,width:150,height:120},
+			{position:{x:300,y:510},type:1,color:0,level:0,width:150,height:90},
+			{position:{x:450,y:540},type:1,color:0,level:0,width:150,height:60},
+			{position:{x:600,y:510},type:1,color:0,level:0,width:150,height:90},
+		],
+	},
+	/*{
+		edge:{x:0,y:600},
+		player:[0,0],
+		walls:[
+			{position:{x:0,y:0},type:1,level:0,width:0,height:0},
+		],
+	},*/
+]
