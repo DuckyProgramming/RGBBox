@@ -8,7 +8,7 @@ function draw(){
 			if(game.color>0){
 				graphics.main.background(mapColor([360,360,360],game.color)[0],mapColor([360,360,360],game.color)[1],mapColor([360,360,360],game.color)[2])
 			}else{
-				graphics.main.background(mapColor([240,240,240],game.color)[0],mapColor([240,240,240],game.color)[1],mapColor([240,240,240],game.color)[2])
+				graphics.main.background(mapColor([220,220,220],game.color)[0],mapColor([220,220,220],game.color)[1],mapColor([220,220,220],game.color)[2])
 			}
 			for(let a=0,la=run.back.length;a<la;a++){
 				for(let b=0,lb=run.back[a].length;b<lb;b++){
