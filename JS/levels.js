@@ -48,6 +48,17 @@ levels=[
 			{position:{x:420,y:450},type:2,color:3,level:0,width:30,height:30},
 		],
 	},{
+		edge:{x:600,y:600},
+		player:[510,510],
+		walls:[
+			{position:{x:0,y:540},type:1,color:0,level:0,width:600,height:60},
+			{position:{x:270,y:0},type:1,color:3,level:0,width:60,height:540},
+			{position:{x:390,y:0},type:1,color:1,level:0,width:60,height:540},
+			{position:{x:210,y:300},type:1,color:1,level:0,width:60,height:240},
+			{position:{x:225,y:240},type:2,color:1,level:0,width:30,height:30},
+			{position:{x:345,y:240},type:2,color:3,level:0,width:30,height:30},
+		],
+	},{
 		edge:{x:1200,y:600},
 		player:[510,510],
 		walls:[
