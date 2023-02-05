@@ -82,7 +82,7 @@ class wall extends physical{
                 !((this.type==4||this.type==5)&&this.timers[0]>0)&&
                 !((this.type==1||this.type==3||this.type==4||this.type==5||this.type==6)&&!colors.collide[game.color][this.color])){
                     switch(this.type){
-                        case 5:
+                        case 6:
                             this.collide[a][b].dead=true
                         break
                     }
