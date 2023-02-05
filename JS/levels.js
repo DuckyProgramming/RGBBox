@@ -199,6 +199,19 @@ levels=[
 			{position:{x:605,y:455},type:4,color:3,level:0,width:20,height:20},
 			
 		],
+	},{
+		edge:{x:1200,y:600},
+		player:[360,360],
+		walls:[
+			{position:{x:0,y:390},type:1,color:0,level:0,width:90,height:210},
+			{position:{x:1110,y:390},type:1,color:0,level:0,width:90,height:210},
+			{position:{x:240,y:0},type:6,color:1,level:0,width:30,height:600},
+			{position:{x:60,y:360},type:2,color:3,level:0,width:30,height:30},
+			{position:{x:660,y:360},type:2,color:1,level:0,width:30,height:30},
+			{position:{x:665,y:420},type:5,color:1,level:0,width:20,height:30},
+			{position:{x:660,y:240},type:2,color:3,level:0,width:30,height:30},
+			{position:{x:665,y:300},type:5,color:3,level:0,width:20,height:30},
+		],
 	},
 	/*{
 		edge:{x:1200,y:600},
