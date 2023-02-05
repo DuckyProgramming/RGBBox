@@ -33,22 +33,42 @@ class wall extends physical{
             break
             case 4:
                 this.layer.noFill()
-                this.layer.stroke(50,this.fade*min(1,max(1-this.timers[0]/15,-15+this.timers[0]/15)))
+                this.layer.stroke(mapColor([50,50,50],this.color)[0],mapColor([50,50,50],this.color)[1],mapColor([50,50,50],this.color)[2],this.fade*min(1,max(1-this.timers[0]/15,-9+this.timers[0]/15)))
                 this.layer.strokeWeight(4)
                 regTriangle(this.layer,0,0,this.width/2,60)
             break
             case 5:
                 this.layer.noFill()
-                this.layer.stroke(50,this.fade*min(1,max(1-this.timers[0]/15,-15+this.timers[0]/15)))
+                this.layer.stroke(mapColor([50,50,50],this.color)[0],mapColor([50,50,50],this.color)[1],mapColor([50,50,50],this.color)[2],this.fade*min(1,max(1-this.timers[0]/15,-9+this.timers[0]/15)))
                 this.layer.strokeWeight(4)
                 regTriangle(this.layer,0,-6,this.width/2,60)
                 regTriangle(this.layer,0,6,this.width/2,60)
+            break
+            case 6:
+                this.layer.fill(mapColor([150,150,150],this.color)[0],mapColor([150,150,150],this.color)[1],mapColor([150,150,150],this.color)[2],this.fade)
+                this.layer.rect(0,0,this.width,this.height)
+                for(let a=0,la=this.width/10;a<la;a++){
+                    this.layer.triangle(-this.width/2+a*10,-this.height/2,-this.width/2+10+a*10,-this.height/2,-this.width/2+5+a*10,-this.height/2-15)
+                    this.layer.triangle(-this.width/2+a*10,this.height/2,-this.width/2+10+a*10,this.height/2,-this.width/2+5+a*10,this.height/2+15)
+                }
+                for(let a=0,la=this.height/10;a<la;a++){
+                    this.layer.triangle(-this.width/2,-this.height/2+a*10,-this.width/2,-this.height/2+10+a*10,-this.width/2-15,-this.height/2+5+a*10)
+                    this.layer.triangle(this.width/2,-this.height/2+a*10,this.width/2,-this.height/2+10+a*10,this.width/2+15,-this.height/2+5+a*10)
+                }
             break
 		}
 		this.layer.translate(-this.position.x,-this.position.y)
 	}
 	update(){
         switch(this.type){
+            case 4: case 5:
+                if(this.timers[0]>0){
+                    this.timers[0]++
+                    if(this.timers[0]>=150){
+                        this.timers[0]=0
+                    }
+                }
+            break
         }
 		for(let a=0,la=this.collide.length;a<la;a++){
             for(let b=0,lb=this.collide[a].length;b<lb;b++){
@@ -56,6 +76,9 @@ class wall extends physical{
                 !((this.type==4||this.type==5)&&this.timers[0]>0)&&
                 !((this.type==1||this.type==3)&&!colors.collide[game.color][this.color])){
                     switch(this.type){
+                        case 5:
+                            this.collide[a][b].dead=true
+                        break
                     }
                     if(!this.collide[a][b].dead){
                         if(this.type==2||this.type==3){
