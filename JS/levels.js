@@ -197,7 +197,6 @@ levels=[
 			{position:{x:485,y:455},type:4,color:3,level:0,width:20,height:20},
 			{position:{x:605,y:455},type:4,color:1,level:0,width:20,height:20},
 			{position:{x:605,y:455},type:4,color:3,level:0,width:20,height:20},
-			
 		],
 	},{
 		edge:{x:1200,y:600},
@@ -211,6 +210,33 @@ levels=[
 			{position:{x:665,y:420},type:5,color:1,level:0,width:20,height:30},
 			{position:{x:660,y:240},type:2,color:3,level:0,width:30,height:30},
 			{position:{x:665,y:300},type:5,color:3,level:0,width:20,height:30},
+		],
+	},{
+		edge:{x:600,y:1800},
+		player:[1710,1710],
+		walls:[
+			{position:{x:0,y:1740},type:1,color:0,level:0,width:90,height:60},
+			{position:{x:510,y:240},type:1,color:0,level:0,width:90,height:60},
+			{position:{x:570,y:300},type:1,color:0,level:0,width:90,height:1500},
+			{position:{x:180,y:1620},type:2,color:0,level:0,width:30,height:30},
+			{position:{x:365,y:1565},type:4,color:1,level:0,width:20,height:20},
+			{position:{x:545,y:1505},type:4,color:3,level:0,width:20,height:20},
+			{position:{x:485,y:1355},type:5,color:1,level:0,width:20,height:20},
+			{position:{x:480,y:1380},type:2,color:1,level:0,width:30,height:30},
+			{position:{x:245,y:1115},type:5,color:3,level:0,width:20,height:20},
+			{position:{x:240,y:1140},type:2,color:3,level:0,width:30,height:30},
+			{position:{x:485,y:875},type:5,color:1,level:0,width:20,height:20},
+			{position:{x:480,y:900},type:2,color:1,level:0,width:30,height:30},
+			{position:{x:245,y:635},type:5,color:3,level:0,width:20,height:20},
+			{position:{x:240,y:660},type:2,color:3,level:0,width:30,height:30},
+
+			{position:{x:395,y:395},type:5,color:0,level:0,width:20,height:20},
+			{position:{x:390,y:420},type:2,color:0,level:0,width:30,height:30},
+			
+			{position:{x:0,y:1260},type:6,color:3,level:0,width:570,height:30},
+			{position:{x:0,y:1020},type:6,color:1,level:0,width:570,height:30},
+			{position:{x:0,y:780},type:6,color:3,level:0,width:570,height:30},
+			{position:{x:0,y:540},type:6,color:1,level:0,width:570,height:30},
 		],
 	},
 	/*{
