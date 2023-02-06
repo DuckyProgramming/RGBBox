@@ -34,7 +34,11 @@ class wall extends physical{
             case 4:
                 if(colors.collide[game.color][this.color]){
                     this.layer.noFill()
-                    this.layer.stroke(mapColor([50,50,50],this.color)[0],mapColor([50,50,50],this.color)[1],mapColor([50,50,50],this.color)[2],this.fade*min(1,max(1-this.timers[0]/15,-9+this.timers[0]/15)))
+                    if(this.color==0){
+                        this.layer.stroke(mapColor([50,50,50],this.color)[0],mapColor([50,50,50],this.color)[1],mapColor([50,50,50],this.color)[2],this.fade*min(1,max(1-this.timers[0]/15,-9+this.timers[0]/15)))
+                    }else{
+                        this.layer.stroke(mapColor([100,100,100],this.color)[0],mapColor([100,100,100],this.color)[1],mapColor([100,100,100],this.color)[2],this.fade*min(1,max(1-this.timers[0]/15,-9+this.timers[0]/15)))
+                    }
                     this.layer.strokeWeight(4)
                     regTriangle(this.layer,0,0,this.width/2,60)
                 }
@@ -42,7 +46,11 @@ class wall extends physical{
             case 5:
                 if(colors.collide[game.color][this.color]){
                     this.layer.noFill()
-                    this.layer.stroke(mapColor([50,50,50],this.color)[0],mapColor([50,50,50],this.color)[1],mapColor([50,50,50],this.color)[2],this.fade*min(1,max(1-this.timers[0]/15,-9+this.timers[0]/15)))
+                    if(this.color==0){
+                        this.layer.stroke(mapColor([50,50,50],this.color)[0],mapColor([50,50,50],this.color)[1],mapColor([50,50,50],this.color)[2],this.fade*min(1,max(1-this.timers[0]/15,-9+this.timers[0]/15)))
+                    }else{
+                        this.layer.stroke(mapColor([100,100,100],this.color)[0],mapColor([100,100,100],this.color)[1],mapColor([100,100,100],this.color)[2],this.fade*min(1,max(1-this.timers[0]/15,-9+this.timers[0]/15)))
+                    }
                     this.layer.strokeWeight(4)
                     regTriangle(this.layer,0,-6,this.width/2,60)
                     regTriangle(this.layer,0,6,this.width/2,60)
