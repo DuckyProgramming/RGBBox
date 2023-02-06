@@ -324,13 +324,9 @@ levels=[
 			{position:{x:60,y:450},type:2,color:3,level:0,width:30,height:30},
 			{position:{x:300,y:450},type:2,color:1,level:0,width:30,height:30},
 			{position:{x:300,y:90},type:2,color:2,level:0,width:30,height:30},
-
 			{position:{x:305,y:510},type:5,color:1,level:0,width:20,height:30},
-
 			{position:{x:305,y:30},type:5,color:2,level:0,width:20,height:30},
-			
 			{position:{x:305,y:390},type:5,color:3,level:0,width:20,height:30},
-
 			{position:{x:240,y:0},type:6,color:1,level:0,width:30,height:600},
 			{position:{x:360,y:0},type:6,color:1,level:0,width:30,height:600},
 			{position:{x:245,y:0},type:6,color:2,level:0,width:20,height:600},
@@ -339,6 +335,31 @@ levels=[
 			{position:{x:250,y:0},type:6,color:3,level:0,width:10,height:180},
 			{position:{x:250,y:270},type:6,color:3,level:0,width:10,height:330},
 			{position:{x:370,y:0},type:6,color:3,level:0,width:10,height:600},
+		],
+	},{
+		edge:{x:750,y:900},
+		player:[810,810],
+		walls:[
+			{position:{x:0,y:840},type:1,color:0,level:0,width:90,height:60},
+			{position:{x:660,y:840},type:1,color:0,level:0,width:90,height:60},
+			{position:{x:60,y:750},type:2,color:3,level:0,width:30,height:30},
+			{position:{x:300,y:510},type:2,color:1,level:0,width:30,height:30},
+			{position:{x:420,y:510},type:2,color:2,level:0,width:30,height:30},
+			{position:{x:360,y:90},type:2,color:3,level:0,width:30,height:30},
+			{position:{x:240,y:0},type:6,color:1,level:0,width:30,height:900},
+			{position:{x:480,y:0},type:6,color:1,level:0,width:30,height:900},
+			{position:{x:245,y:0},type:6,color:2,level:0,width:20,height:900},
+			{position:{x:485,y:0},type:6,color:2,level:0,width:20,height:900},
+			{position:{x:250,y:0},type:6,color:3,level:0,width:10,height:480},
+			{position:{x:250,y:570},type:6,color:3,level:0,width:10,height:330},
+			{position:{x:490,y:0},type:6,color:3,level:0,width:10,height:300},
+			{position:{x:490,y:450},type:6,color:3,level:0,width:10,height:450},
+			{position:{x:335,y:810},type:5,color:1,level:0,width:20,height:30},
+			{position:{x:365,y:810},type:5,color:1,level:0,width:20,height:30},
+			{position:{x:395,y:810},type:5,color:1,level:0,width:20,height:30},
+			{position:{x:335,y:810},type:5,color:2,level:0,width:20,height:30},
+			{position:{x:365,y:810},type:5,color:2,level:0,width:20,height:30},
+			{position:{x:395,y:810},type:5,color:2,level:0,width:20,height:30},
 		],
 	},
 	/*{
