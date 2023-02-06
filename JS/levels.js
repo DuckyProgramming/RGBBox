@@ -141,6 +141,29 @@ levels=[
 			{position:{x:245,y:275},type:4,color:0,level:0,width:20,height:20},
 		],
 	},{
+		edge:{x:900,y:600},
+		player:[510,510],
+		walls:[
+			{position:{x:0,y:540},type:1,color:0,level:0,width:90,height:60},
+			{position:{x:810,y:540},type:1,color:0,level:0,width:90,height:60},
+		],
+	},{
+		edge:{x:1200,y:600},
+		player:[510,510],
+		walls:[
+			{position:{x:0,y:540},type:1,color:0,level:0,width:90,height:60},
+			{position:{x:1110,y:540},type:1,color:0,level:0,width:90,height:60},
+			{position:{x:360,y:300},type:2,color:3,level:0,width:30,height:30},
+			{position:{x:365,y:245},type:4,color:3,level:0,width:20,height:20},
+			{position:{x:365,y:365},type:4,color:3,level:0,width:20,height:20},
+			{position:{x:540,y:300},type:2,color:1,level:0,width:30,height:30},
+			{position:{x:545,y:245},type:4,color:1,level:0,width:20,height:20},
+			{position:{x:545,y:365},type:4,color:1,level:0,width:20,height:20},
+			{position:{x:720,y:300},type:2,color:3,level:0,width:30,height:30},
+			{position:{x:725,y:245},type:4,color:3,level:0,width:20,height:20},
+			{position:{x:725,y:365},type:4,color:3,level:0,width:20,height:20},
+		],
+	},{
 		edge:{x:1200,y:600},
 		player:[510,510],
 		walls:[
@@ -156,8 +179,8 @@ levels=[
 			{position:{x:395,y:335},type:4,color:0,level:0,width:20,height:20},
 			{position:{x:540,y:0},type:1,color:1,level:0,width:30,height:360},
 			{position:{x:635,y:455},type:4,color:1,level:0,width:20,height:20},
-			{position:{x:750,y:455},type:2,color:3,level:0,width:30,height:30},
-			{position:{x:875,y:455},type:4,color:3,level:0,width:20,height:20},
+			{position:{x:810,y:455},type:2,color:3,level:0,width:30,height:30},
+			{position:{x:845,y:455},type:4,color:3,level:0,width:20,height:20},
 		],
 	},{
 		edge:{x:600,y:1200},
@@ -254,10 +277,8 @@ levels=[
 			{position:{x:480,y:900},type:2,color:1,level:0,width:30,height:30},
 			{position:{x:245,y:635},type:5,color:3,level:0,width:20,height:20},
 			{position:{x:240,y:660},type:2,color:3,level:0,width:30,height:30},
-
 			{position:{x:395,y:395},type:5,color:0,level:0,width:20,height:20},
 			{position:{x:390,y:420},type:2,color:0,level:0,width:30,height:30},
-			
 			{position:{x:0,y:1260},type:6,color:3,level:0,width:570,height:30},
 			{position:{x:0,y:1020},type:6,color:1,level:0,width:570,height:30},
 			{position:{x:0,y:780},type:6,color:3,level:0,width:570,height:30},
