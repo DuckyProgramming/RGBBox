@@ -5,8 +5,8 @@ colors={
         [0.5,1.5,0.5],
         [0.5,0.5,1.5],
         [1.5,1.5,0.5],
-        [1.5,0.5,1.5],
         [0.5,1.5,1.5],
+        [1.5,0.5,1.5],
     ],collide:[
         [true,true,true,true,true,true,true],
         [true,true,false,false,true,true,false],
@@ -18,7 +18,7 @@ colors={
     ],
 }
 stage={scale:0,focus:{x:0,y:0,scale:0},scene:'level'}
-game={zone:28,edge:{x:0,y:0},tileSize:40,color:0}
+game={zone:29,edge:{x:0,y:0},tileSize:40,color:0}
 physics={gravity:0.5,resistance:0.03,friction:0.05}
 graphics={main:0,backgrounds:[],minor:[]}
 transition={trigger:false,anim:0,scene:stage.scene,zone:game.zone,key:0}
