@@ -479,6 +479,22 @@ levels=[
 			{position:{x:450,y:720},type:2,color:6,level:0,width:30,height:30},
 		],
 	},{
+		edge:{x:900,y:600},
+		player:[510,510],
+		walls:[
+			{position:{x:0,y:540},type:1,color:0,level:0,width:90,height:60},
+			{position:{x:810,y:540},type:1,color:0,level:0,width:90,height:60},
+			{position:{x:300,y:0},type:6,color:1,level:0,width:30,height:600},
+			{position:{x:480,y:0},type:6,color:2,level:0,width:30,height:600},
+			{position:{x:660,y:0},type:6,color:3,level:0,width:30,height:600},
+			{position:{x:395,y:300},type:5,color:0,level:0,width:20,height:30},
+			{position:{x:575,y:300},type:5,color:0,level:0,width:20,height:30},
+			{position:{x:755,y:300},type:5,color:0,level:0,width:20,height:30},
+			{position:{x:210,y:360},type:2,color:5,level:0,width:30,height:30},
+			{position:{x:390,y:360},type:2,color:6,level:0,width:30,height:30},
+			{position:{x:570,y:360},type:2,color:4,level:0,width:30,height:30},
+		],
+	},{
 		edge:{x:1500,y:600},
 		player:[510,510],
 		walls:[
