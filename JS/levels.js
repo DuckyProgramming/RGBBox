@@ -672,11 +672,10 @@ levels=[
 			{position:{x:965,y:600},type:5,color:3,level:0,width:20,height:30},
 		],
 	},{
-		edge:{x:900,y:3600},
-		player:[510,510],
+		edge:{x:900,y:6000},
+		player:[5910,0],
 		walls:[
-			{position:{x:0,y:540},type:1,color:0,level:0,width:90,height:60},
-			{position:{x:1110,y:540},type:1,color:0,level:0,width:90,height:60},
+			{position:{x:0,y:5940},type:1,color:0,level:0,width:360,height:60},
 		],
 	},
 	/*{

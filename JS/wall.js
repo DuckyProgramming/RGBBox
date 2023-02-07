@@ -113,7 +113,7 @@ class wall extends physical{
                                 this.collide[a][b].velocity.y=0
                                 this.collide[a][b].velocity.x*=(1-physics.friction)
                                 this.collide[a][b].timers[0]=5
-                                this.collide[a][b].jumps=1
+                                this.collide[a][b].jumps=max(1,this.collide[a][b].jumps)
                             }
                             else if(boxCollideBox(this,this.collide[a][b])==2&&this.collide[a][b].velocity.x<0){
                                 this.collide[a][b].position.x=this.position.x+this.width/2+this.collide[a][b].width/2

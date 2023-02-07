@@ -34,6 +34,9 @@ function displayTransition(layer,transition){
 			stage.scene=transition.scene
 			if(stage.scene=='level'){
 				game.zone=transition.zone
+				if(game.zone==levels.length-1){
+					setupFinal()
+				}
 				resetWorld()
 				generateWorld(graphics.main,levels[game.zone],transition.key)
 			}
@@ -156,4 +159,31 @@ function generateWorld(layer,level,key){
 		entities.walls[level.walls[a].level].push(new wall(layer,level.walls[a].position.x+level.walls[a].width/2,level.walls[a].position.y+level.walls[a].height/2,level.walls[a].type,level.walls[a].color,level.walls[a].width,level.walls[a].height))
 	}
 	run={back:[],fore:[entities.walls[1],entities.walls[0],entities.players,entities.particles]}
+}
+function setupFinal(){
+	levels[39].walls=[
+		{position:{x:0,y:5940},type:1,color:0,level:0,width:360,height:60},
+		{position:{x:120,y:5840},type:2,color:1,level:0,width:30,height:30},
+		{position:{x:180,y:5840},type:2,color:2,level:0,width:30,height:30},
+		{position:{x:240,y:5840},type:2,color:3,level:0,width:30,height:30},
+		{position:{x:300,y:4340},type:2,color:1,level:0,width:30,height:30},
+		{position:{x:360,y:4340},type:2,color:2,level:0,width:30,height:30},
+		{position:{x:420,y:4340},type:2,color:3,level:0,width:30,height:30},
+		{position:{x:300,y:2840},type:2,color:1,level:0,width:30,height:30},
+		{position:{x:360,y:2840},type:2,color:2,level:0,width:30,height:30},
+		{position:{x:420,y:2840},type:2,color:3,level:0,width:30,height:30},
+		{position:{x:300,y:1340},type:2,color:1,level:0,width:30,height:30},
+		{position:{x:360,y:1340},type:2,color:2,level:0,width:30,height:30},
+		{position:{x:420,y:1340},type:2,color:3,level:0,width:30,height:30},
+	]
+	for(let g=0;g<100;g++){
+		levels[39].walls.push({position:{x:450+random(0,360),y:g*60},type:1,color:1,level:1,width:450,height:60})
+		levels[39].walls.push({position:{x:450+random(0,300),y:g*60},type:1,color:2,level:1,width:450,height:60})
+		levels[39].walls.push({position:{x:450+random(0,300),y:g*60},type:1,color:3,level:1,width:450,height:60})
+	}
+	for(let g=1;g<8;g++){
+		levels[39].walls.push({position:{x:300+random(0,120),y:g*750+random(-300,300)+300},type:5,color:1,level:1,width:20,height:30})
+		levels[39].walls.push({position:{x:300+random(0,120),y:g*750+random(-300,300)+300},type:5,color:2,level:1,width:20,height:30})
+		levels[39].walls.push({position:{x:300+random(0,120),y:g*750+random(-300,300)+300},type:5,color:3,level:1,width:20,height:30})
+	}
 }
