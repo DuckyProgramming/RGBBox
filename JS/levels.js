@@ -81,6 +81,7 @@ levels=[
 			{position:{x:450,y:540},type:1,color:3,level:0,width:90,height:60},
 			{position:{x:810,y:540},type:1,color:1,level:0,width:90,height:60},
 			{position:{x:480,y:360},type:2,color:1,level:0,width:30,height:30},
+			{position:{x:60,y:420},type:2,color:3,level:0,width:30,height:30},
 		],
 	},{
 		edge:{x:1200,y:600},
@@ -137,8 +138,9 @@ levels=[
 			{position:{x:0,y:810},type:1,color:3,level:0,width:480,height:30},
 			{position:{x:240,y:780},type:2,color:1,level:0,width:30,height:30},
 			{position:{x:245,y:575},type:4,color:0,level:0,width:20,height:20},
-			{position:{x:245,y:425},type:4,color:0,level:0,width:20,height:20},
-			{position:{x:245,y:275},type:4,color:0,level:0,width:20,height:20},
+			{position:{x:245,y:455},type:4,color:0,level:0,width:20,height:20},
+			{position:{x:245,y:335},type:4,color:0,level:0,width:20,height:20},
+			{position:{x:245,y:215},type:4,color:0,level:0,width:20,height:20},
 		],
 	},{
 		edge:{x:900,y:600},
@@ -180,10 +182,11 @@ levels=[
 			{position:{x:390,y:0},type:1,color:3,level:0,width:30,height:210},
 			{position:{x:390,y:300},type:1,color:3,level:0,width:30,height:300},
 			{position:{x:395,y:335},type:4,color:0,level:0,width:20,height:20},
-			{position:{x:540,y:0},type:1,color:1,level:0,width:30,height:360},
+			{position:{x:540,y:0},type:1,color:1,level:0,width:30,height:330},
 			{position:{x:635,y:455},type:4,color:1,level:0,width:20,height:20},
 			{position:{x:810,y:455},type:2,color:3,level:0,width:30,height:30},
 			{position:{x:845,y:455},type:4,color:3,level:0,width:20,height:20},
+			{position:{x:995,y:455},type:4,color:3,level:0,width:20,height:20},
 		],
 	},{
 		edge:{x:600,y:1200},

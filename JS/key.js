@@ -30,9 +30,15 @@ function keyPressed(){
 		case 'ArrowDown':
 			inputs.keys[1][3]=true
 		break
+		case ' ':
+			if(stage.scene=='menu'){
+				transition.trigger=true
+				transition.scene='level'
+			}
+		break
 	}
 }
-	function keyReleased(){
+function keyReleased(){
 	switch(key){
 		case 'a':
 			inputs.keys[0][0]=false

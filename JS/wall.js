@@ -6,6 +6,10 @@ class wall extends physical{
             case 4: case 5:
                 this.timers=[0]
             break
+            case 6:
+                this.width-=10
+                this.height-=10
+            break
         }
 	}
 	display(){
@@ -59,14 +63,14 @@ class wall extends physical{
             case 6:
                 if(colors.collide[game.color][this.color]){
                     this.layer.fill(mapColor([150,150,150],this.color)[0],mapColor([150,150,150],this.color)[1],mapColor([150,150,150],this.color)[2],this.fade)
-                    this.layer.rect(0,0,this.width,this.height)
-                    for(let a=0,la=this.width/10;a<la;a++){
-                        this.layer.triangle(-this.width/2+a*10,-this.height/2,-this.width/2+10+a*10,-this.height/2,-this.width/2+5+a*10,-this.height/2-15)
-                        this.layer.triangle(-this.width/2+a*10,this.height/2,-this.width/2+10+a*10,this.height/2,-this.width/2+5+a*10,this.height/2+15)
+                    this.layer.rect(0,0,this.width+10,this.height+10)
+                    for(let a=0,la=this.width/10+1;a<la;a++){
+                        this.layer.triangle(-this.width/2+a*10-5,-this.height/2-5,-this.width/2+10+a*10-5,-this.height/2-5,-this.width/2+5+a*10-5,-this.height/2-20)
+                        this.layer.triangle(-this.width/2+a*10-5,this.height/2+5,-this.width/2+10+a*10-5,this.height/2+5,-this.width/2+5+a*10-5,this.height/2+20)
                     }
-                    for(let a=0,la=this.height/10;a<la;a++){
-                        this.layer.triangle(-this.width/2,-this.height/2+a*10,-this.width/2,-this.height/2+10+a*10,-this.width/2-15,-this.height/2+5+a*10)
-                        this.layer.triangle(this.width/2,-this.height/2+a*10,this.width/2,-this.height/2+10+a*10,this.width/2+15,-this.height/2+5+a*10)
+                    for(let a=0,la=this.height/10+1;a<la;a++){
+                        this.layer.triangle(-this.width/2-5,-this.height/2+a*10-5,-this.width/2-5,-this.height/2+10+a*10-5,-this.width/2-20,-this.height/2+5+a*10-5)
+                        this.layer.triangle(this.width/2+5,-this.height/2+a*10-5,this.width/2+5,-this.height/2+10+a*10-5,this.width/2+20,-this.height/2+5+a*10-5)
                     }
                 }
             break
