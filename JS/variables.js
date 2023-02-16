@@ -18,7 +18,7 @@ colors={
     ],
 }
 stage={scale:0,focus:{x:0,y:0,scale:0},scene:'menu'}
-game={zone:0,edge:{x:0,y:0},tileSize:40,color:0,time:0,splits:[],maxZone:0}
+game={zone:0,edge:{x:0,y:0},tileSize:40,color:0,time:0,splits:[],maxZone:0,sped:true}
 physics={gravity:0.5,resistance:0.03,friction:0.05}
 graphics={main:0,backgrounds:[],minor:[]}
 transition={trigger:false,anim:0,scene:stage.scene,zone:game.zone,key:0}

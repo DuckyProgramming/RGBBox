@@ -273,7 +273,7 @@ levels=[
 			{position:{x:510,y:240},type:1,color:0,level:0,width:90,height:60},
 			{position:{x:570,y:300},type:1,color:0,level:0,width:90,height:1500},
 			{position:{x:180,y:1620},type:2,color:0,level:0,width:30,height:30},
-			{position:{x:365,y:1565},type:4,color:1,level:0,width:20,height:20},
+			{position:{x:365,y:1560},type:5,color:1,level:0,width:20,height:30},
 			{position:{x:545,y:1505},type:4,color:3,level:0,width:20,height:20},
 			{position:{x:485,y:1355},type:5,color:1,level:0,width:20,height:20},
 			{position:{x:480,y:1380},type:2,color:1,level:0,width:30,height:30},
